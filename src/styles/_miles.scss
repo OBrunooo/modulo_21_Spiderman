@@ -1,0 +1,31 @@
+@use "variaveis";
+
+.miles{
+    padding: 0 100px;
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 70px;
+
+    &__title{
+        h2{
+            font-size: 15px;
+        }
+    }
+
+    &__conteudo {
+        padding-top: 20px;
+        display: flex;
+        &__image {
+            img{
+                height: 230px;
+                border-radius: 6px;
+            }
+        }
+
+        &__text {
+            padding-left: 15px;
+            text-align: start;
+            width: 500px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.header {
+    padding: 0px 100px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        .logos {
+            display: flex;
+            align-items: center;
+            padding-top: 5px;
+            &__image {
+                max-width: 50px;
+            }
+            &__texto {
+                max-width: 100px;
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+    }
+}
