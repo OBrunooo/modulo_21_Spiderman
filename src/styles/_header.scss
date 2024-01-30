@@ -1,5 +1,13 @@
+@use "variaveis";
+
 .header {
+    z-index: 1;
     padding: 0px 100px;
+    width: 100%;
+    position: fixed;
+    background-color: variaveis.$corDeFundo;
+    border-bottom: 1px solid red;
+    animation: 2s;
 
     &__container {
         display: flex;

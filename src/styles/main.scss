@@ -3,10 +3,11 @@
 @use "hero";
 @use "miles";
 @use "filmes";
+@use "footer";
 
 .titleEstilizado {
     font-size: 30px;
-    color: variaveis.$corDeTextoHover;
+    color: rgb(197, 4, 4);
     font-family: 'Furios';
 }
 
@@ -33,7 +34,9 @@ body {
         padding-left: 20px;
 
     &:hover {
-        color: variaveis.$corDeTextoHover
+        color: rgb(197, 4, 4);
+        font-size: 18px;
+        transition: 0.5s;
     }
     }
     

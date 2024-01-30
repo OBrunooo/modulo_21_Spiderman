@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spiderman</title>
     <link rel="stylesheet" href="dist/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <style>
         @font-face {
             font-family:"Furios";
@@ -23,17 +24,14 @@
                 <img class="logos__texto" src="src/images/logo_texto1.png" alt="Logo spiderman">
             </h1>
             <ul class="header__links">
-                <li class="header__links__item link-text">
-                    <a href="#hero">Home</a>
+                <li class="link-text">
+                    <a class="header__links__item" href="#hero">Home</a>
                 </li>
-                <li class="header__links__item link-text">
-                    <a href="#">Miles Morales</a>
+                <li class="link-text">
+                    <a class="header__links__item" href="#miles">Miles Morales</a>
                 </li>
-                <li class="header__links__item link-text">
-                    <a href="#">Filmes</a>
-                </li>
-                <li class="header__links__item link-text">
-                    <a href="#">Personagens</a>
+                <li class="link-text">
+                    <a class="header__links__item" href="#filmes">Filmes</a>
                 </li>
             </ul>
         </div>
@@ -46,7 +44,7 @@
         </div>
         <img src="src/images/hero.png" alt="">
     </section>
-    <section class="miles">
+    <section class="miles" id="miles">
         <div class="miles__title">
             <h2>Sobre</h2>
             <h1 class="titleEstilizado">Miles Morales</h1>
@@ -61,7 +59,7 @@
             </div>
         </div>
     </section>
-    <section class="filmes">
+    <section class="filmes" id="filmes">
         <div class="filmes__title">
             <h1 class="titleEstilizado">Filmes</h1>
         </div>
@@ -75,13 +73,19 @@
         </div>
             <div data-tab-id="noaranhaverso" class="filmes__sinopse filmes__sinopse--is--active" id="sinopse--noarahaverso">
                 <iframe class="filmes__sinopse__item__video" src="https://www.youtube.com/embed/SS6ABPkfmBE" frameborder="0"></iframe>
-                <p class="filmes__sinopse__item">noaraApós ser atingido por uma teia radioativa, Miles Morales, um jovem negro do Brooklyn, se torna o Homem-Aranha, inspirado no legado do já falecido Peter Parker. Entretanto, ao visitar o túmulo de seu ídolo em uma noite chuvosa, ele é surpreendido com a presença do próprio Peter, vestindo o traje do herói por baixo de um sobretudo. A surpresa fica ainda maior quando Miles descobre que ele veio de uma dimensão paralela, assim como outras versões do Homem-Aranha.</p>
+                <p class="filmes__sinopse__item__text">Após ser atingido por uma teia radioativa, Miles Morales, um jovem negro do Brooklyn, se torna o Homem-Aranha, inspirado no legado do já falecido Peter Parker. Entretanto, ao visitar o túmulo de seu ídolo em uma noite chuvosa, ele é surpreendido com a presença do próprio Peter, vestindo o traje do herói por baixo de um sobretudo. A surpresa fica ainda maior quando Miles descobre que ele veio de uma dimensão paralela, assim como outras versões do Homem-Aranha.</p>
             </div>
             <div data-tab-id="atravesdoaranhaverso" class="filmes__sinopse" id="sinopse--atravesdoaranhaverso">
-                <iframe class="filmes__sinopse__item__video" src="https://www.youtube.com/embed/SS6ABPkfmBE" frameborder="0"></iframe>
-                <p>Após ser atingido por uma teia radioativa, Miles Morales, um jovem negro do Brooklyn, se torna o Homem-Aranha, inspirado no legado do já falecido Peter Parker. Entretanto, ao visitar o túmulo de seu ídolo em uma noite chuvosa, ele é surpreendido com a presença do próprio Peter, vestindo o traje do herói por baixo de um sobretudo. A surpresa fica ainda maior quando Miles descobre que ele veio de uma dimensão paralela, assim como outras versões do Homem-Aranha.</p>
+                <iframe class="filmes__sinopse__item__video" src="https://www.youtube.com/embed/YWX_a45okQk" frameborder="0"></iframe>
+                <p class="filmes__sinopse__item__text">Depois de se reunir com Gwen Stacy, Homem-Aranha é jogado no multiverso. Lá, o super-herói aracnídeo encontra uma numerosa equipe encarregada de proteger sua própria existência.</p>
             </div>
     </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <h1>Site criado por Bruno Gomes Melo Rosa</h1>
+            <p>Este site tem como seu único propósito fins acadêmicos</p>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="src/scripts/main.js"></script>
 </body>
