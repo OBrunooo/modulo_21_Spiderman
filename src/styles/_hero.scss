@@ -1,7 +1,6 @@
 @use "variaveis";
 
 .hero {
-    padding: 0px 100px;
     padding-top: 55px;
     display: flex;
     justify-content: space-between;
@@ -12,15 +11,27 @@
 
     &__text {
         span {
-            font-size: 15px;
+            font-size: 20px;
         }
         h2 {
-            font-size: 20px;
+            font-size: 25px;
         }
     }
 
-    img {
+    &__image {
         width: 40%;
         object-fit: cover;
+    }
+
+    @media(max-width:480px) {
+        &__text {
+            padding-left: 10px;
+            span {
+                font-size: 10px;
+            }
+            h2 {
+                font-size: 15px;
+            }
+        }
     }
 }

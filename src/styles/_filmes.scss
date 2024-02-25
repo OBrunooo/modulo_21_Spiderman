@@ -1,5 +1,4 @@
 .filmes {
-    padding: 0 100px;
     text-align: center;
     padding-bottom: 20px;
     border-bottom: solid 1px red;
@@ -56,12 +55,31 @@
             }
 
             &__text{
-                width: 400px;
+                width: 500px;
                 text-align: start;
                 padding-left: 10px;
                 overflow: hidden;
             }
         }
+    }
 
+    @media (max-width: 768px) {
+        &__tabs {
+            &__button {
+                width: 150px;
+                height: 200px;
+            }
+        }
+        &__sinopse {
+            width: 95%;
+            font-size: 12px;
+            width: 90%;
+            margin: 0 auto;
+            &__item {
+                &__video {
+                    width: 60%;
+                }
+            }
+        }
     }
 }

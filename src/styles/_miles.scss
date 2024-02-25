@@ -1,7 +1,6 @@
 @use "variaveis";
 
 .miles{
-    padding: 0 100px;
     padding-top: 30px;
     text-align: center;
     padding-bottom: 70px;
@@ -13,11 +12,13 @@
     }
 
     &__conteudo {
+        width: 90%;
+        margin: 0 auto;
         padding-top: 20px;
         display: flex;
         &__image {
             img{
-                height: 230px;
+                width: 530px;
                 border-radius: 6px;
             }
         }
@@ -26,6 +27,31 @@
             padding-left: 15px;
             text-align: start;
             width: 500px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__conteudo {
+            display: block;
+            margin: 0 auto;
+            width: 600px;
+            &__image {
+                img {
+                    width: 100%;
+                }
+            }
+
+            &__text {
+                width: 100%;
+                padding: 0;
+                padding-top: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__conteudo {
+            width: 80%;
         }
     }
 }

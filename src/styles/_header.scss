@@ -2,16 +2,21 @@
 
 .header {
     z-index: 1;
-    padding: 0px 100px;
     width: 100%;
     position: fixed;
     background-color: variaveis.$corDeFundo;
     border-bottom: 1px solid red;
     animation: 2s;
-
+    
     &__container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &__itens{
         display: flex;
         justify-content: space-between;
+        
         .logos {
             display: flex;
             align-items: center;
@@ -19,14 +24,35 @@
             &__image {
                 max-width: 50px;
             }
-            &__texto {
+            &__text {
                 max-width: 100px;
             }
         }
+            &__links {
+                display: flex;
+                align-items: center;
+            }
     }
 
-    &__links {
-        display: flex;
-        align-items: center;
+    @media(max-width:480px) {
+        &__container {
+            width: 90%;
+        }
+
+        &__itens{
+            .logos {
+                &__image{
+                    max-width: 40px;
+                }
+                &__text{
+                    display: none;
+                }
+            }
+        }
+        a{
+            font-size: 12px !important;
+            padding-left: 10px;
+        }
+
     }
 }

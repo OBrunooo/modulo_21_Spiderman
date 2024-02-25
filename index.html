@@ -19,66 +19,74 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <h1 class="logos">
-                <img class="logos__image" src="src/images/logo.png" alt="Logo Spiderman">
-                <img class="logos__texto" src="src/images/logo_texto1.png" alt="Logo spiderman">
-            </h1>
-            <ul class="header__links">
-                <li class="link-text">
-                    <a class="header__links__item" href="#hero">Home</a>
-                </li>
-                <li class="link-text">
-                    <a class="header__links__item" href="#miles">Miles Morales</a>
-                </li>
-                <li class="link-text">
-                    <a class="header__links__item" href="#filmes">Filmes</a>
-                </li>
-            </ul>
+            <div class="header__itens">
+                <h1 class="header__itens__logos">
+                    <img class="logos__image" src="src/images/logo.png" alt="Logo Spiderman">
+                    <img class="logos__text" src="src/images/logo_texto1.png" alt="Logo spiderman">
+                </h1>
+                <ul class="header__itens__links">
+                    <li class="link-text">
+                        <a class="header__links__item" href="#hero">Home</a>
+                    </li>
+                    <li class="link-text">
+                        <a class="header__links__item" href="#miles">Miles Morales</a>
+                    </li>
+                    <li class="link-text">
+                        <a class="header__links__item" href="#filmes">Filmes</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <section class="hero" id="hero">
-        <div class="hero__text">
-            <span>Conheça </span>
-            <h1 class="titleEstilizado">Spider man Miles Morales</h1> 
-            <h2>um héroi que vai te <br> tirar muitas risadas</h2>
+        <div class="container">
+            <div class="hero__text">
+                <span>Conheça </span>
+                <h1 class="titleEstilizado">Spider man Miles Morales</h1> 
+                <h2>um héroi que vai te <br> tirar muitas risadas</h2>
+            </div>
         </div>
-        <img src="src/images/hero.png" alt="">
+        <img class="hero__image" src="src/images/hero.png" alt="">
     </section>
     <section class="miles" id="miles">
-        <div class="miles__title">
-            <h2>Sobre</h2>
-            <h1 class="titleEstilizado">Miles Morales</h1>
-        </div>
-        <div class="miles__conteudo">
-            <div class="miles__conteudo__image">
-                <img src="src/images/miles.png" alt="">
+        <div class="container">
+            <div class="miles__title">
+                <h2>Sobre</h2>
+                <h1 class="titleEstilizado">Miles Morales</h1>
             </div>
-            <div class="miles__conteudo__text">
-                <p>Miles Morales é um personagem fictício da Marvel Comics que apareceu pela primeira vez em 2011. Ele foi criado por Brian Michael Bendis e Sara Pichelli e estreou na série "Ultimate Fallout" #4. Miles é um adolescente afro-latino que vive no Universo Ultimate da Marvel, uma linha de quadrinhos que apresenta versões alternativas dos personagens clássicos. <br>
-                    A história de Miles Morales difere da do Peter Parker tradicional. Em seu universo, Peter Parker morre, e Miles é picado por uma aranha geneticamente modificada, adquirindo poderes semelhantes aos do Homem-Aranha. Ele luta inicialmente contra a ideia de se tornar um super-herói, mas depois abraça a responsabilidade de usar seus poderes para proteger a cidade.</p>
+            <div class="miles__conteudo">
+                <div class="miles__conteudo__image">
+                    <img src="src/images/miles.png" alt="">
+                </div>
+                <div class="miles__conteudo__text">
+                    <p>Miles Morales é um personagem fictício da Marvel Comics que apareceu pela primeira vez em 2011. Ele foi criado por Brian Michael Bendis e Sara Pichelli e estreou na série "Ultimate Fallout" #4. Miles é um adolescente afro-latino que vive no Universo Ultimate da Marvel, uma linha de quadrinhos que apresenta versões alternativas dos personagens clássicos. <br>
+                        A história de Miles Morales difere da do Peter Parker tradicional. Em seu universo, Peter Parker morre, e Miles é picado por uma aranha geneticamente modificada, adquirindo poderes semelhantes aos do Homem-Aranha. Ele luta inicialmente contra a ideia de se tornar um super-herói, mas depois abraça a responsabilidade de usar seus poderes para proteger a cidade.</p>
+                </div>
             </div>
         </div>
     </section>
     <section class="filmes" id="filmes">
-        <div class="filmes__title">
-            <h1 class="titleEstilizado">Filmes</h1>
-        </div>
-        <div class="filmes__tabs">
-            <button class="filmes__tabs__button filmes__tabs__button--is--active" id="button--noaranhaverso">
-                <img data-tab-button="noaranhaverso" src="src/images/noaranhaverso.webp" alt="">
-            </button>
-            <button  class="filmes__tabs__button" id="button--atravesdoaranhaverso">
-                <img data-tab-button="atravesdoaranhaverso" src="src/images/atravesdoaranhaverso.webp" alt="">
-            </button>
-        </div>
-            <div data-tab-id="noaranhaverso" class="filmes__sinopse filmes__sinopse--is--active" id="sinopse--noarahaverso">
-                <iframe class="filmes__sinopse__item__video" src="https://www.youtube.com/embed/SS6ABPkfmBE" frameborder="0"></iframe>
-                <p class="filmes__sinopse__item__text">Após ser atingido por uma teia radioativa, Miles Morales, um jovem negro do Brooklyn, se torna o Homem-Aranha, inspirado no legado do já falecido Peter Parker. Entretanto, ao visitar o túmulo de seu ídolo em uma noite chuvosa, ele é surpreendido com a presença do próprio Peter, vestindo o traje do herói por baixo de um sobretudo. A surpresa fica ainda maior quando Miles descobre que ele veio de uma dimensão paralela, assim como outras versões do Homem-Aranha.</p>
+        <div class="container">
+            <div class="filmes__title">
+                <h1 class="titleEstilizado">Filmes</h1>
             </div>
-            <div data-tab-id="atravesdoaranhaverso" class="filmes__sinopse" id="sinopse--atravesdoaranhaverso">
-                <iframe class="filmes__sinopse__item__video" src="https://www.youtube.com/embed/YWX_a45okQk" frameborder="0"></iframe>
-                <p class="filmes__sinopse__item__text">Depois de se reunir com Gwen Stacy, Homem-Aranha é jogado no multiverso. Lá, o super-herói aracnídeo encontra uma numerosa equipe encarregada de proteger sua própria existência.</p>
+            <div class="filmes__tabs">
+                <button class="filmes__tabs__button filmes__tabs__button--is--active" id="button--noaranhaverso">
+                    <img data-tab-button="noaranhaverso" src="src/images/noaranhaverso.webp" alt="">
+                </button>
+                <button  class="filmes__tabs__button" id="button--atravesdoaranhaverso">
+                    <img data-tab-button="atravesdoaranhaverso" src="src/images/atravesdoaranhaverso.webp" alt="">
+                </button>
             </div>
+                <div data-tab-id="noaranhaverso" class="filmes__sinopse filmes__sinopse--is--active" id="sinopse--noarahaverso">
+                    <iframe class="filmes__sinopse__item__video" src="https://www.youtube.com/embed/SS6ABPkfmBE" frameborder="0"></iframe>
+                    <p class="filmes__sinopse__item__text">Após ser atingido por uma teia radioativa, Miles Morales, um jovem negro do Brooklyn, se torna o Homem-Aranha, inspirado no legado do já falecido Peter Parker</p>
+                </div>
+                <div data-tab-id="atravesdoaranhaverso" class="filmes__sinopse" id="sinopse--atravesdoaranhaverso">
+                    <iframe class="filmes__sinopse__item__video" src="https://www.youtube.com/embed/YWX_a45okQk" frameborder="0"></iframe>
+                    <p class="filmes__sinopse__item__text">Depois de se reunir com Gwen Stacy, Homem-Aranha é jogado no multiverso. Lá, o super-herói aracnídeo encontra uma numerosa equipe encarregada de proteger sua própria existência.</p>
+                </div>
+        </div>
     </section>
     <footer class="footer">
         <div class="footer__container">
